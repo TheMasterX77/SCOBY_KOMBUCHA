@@ -4,40 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoby Kombucha</title>
+
+    <!-- Tu CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para íconos de WhatsApp e Instagram -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <!-- BANNER FIJO SUPERIOR -->
     <header class="banner">
-        <h1 class="frase">MENOS PROCESADA, MÁS AUTÉNTICA</h1>
         <img src="img/logo_scooby.jpeg" class="logo-banner" alt="Scoby Logo">
+        <h1 class="frase">MENOS PROCESADA, MÁS AUTÉNTICA</h1>
     </header>
 
-    <!-- ESPACIADO PARA QUE EL CONTENIDO NO QUEDE TAPADO -->
-    <div class="space"></div>
-
-    <!-- IMAGEN PRINCIPAL -->
+    <!-- HERO: IMAGEN PRINCIPAL -->
     <section class="hero">
-        <img src="img/banner-botellas.jpg" class="hero-img" alt="Botellas Scoby">
+        <img src="img/imagenFondo.jpeg" class="hero-img" alt="Botellas Scoby Kombucha">
+        <!-- Logo blanco eliminado -->
     </section>
 
-    <!-- ICONOS FLOTANTES DERECHA -->
+    <!-- ICONOS FLOTANTES DERECHA (K, WhatsApp, Instagram) -->
     <div class="iconos-flotantes">
-        <a href="#"><img src="img/icon-k.png" alt=""></a>
-        <a href="https://wa.me/56939515170"><img src="img/icon-wa.png" alt=""></a>
-        <a href="#"><img src="img/icon-ig.png" alt=""></a>
+        <!-- Icono K -->
+        <a href="#" class="icon icon-k" title="K">
+            <span class="icon-char">k</span>
+        </a>
+
+        <!-- WhatsApp (logo real) -->
+        <a href="#" class="icon icon-wa" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Instagram (logo real) -->
+        <a href="#" class="icon icon-ig" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
 
-    <!-- LOGO BLANCO INFERIOR -->
-    <img src="img/logo-white.png" class="logo-white" alt="Scoby Blanco">
+    <!-- SECCIÓN GALERÍA / RULETA -->
+    <section class="galeria">
+        <h2>Momentos Scoby Kombucha</h2>
+        <p class="galeria-subtitulo">Botellas, sabores y la experiencia de servir tu kombucha.</p>
+
+        <div class="ruleta">
+            <div class="ruleta-track" id="ruleta-track">
+
+                <!-- Grupo 1: foto1 + foto2 → SKOBY / jengibre -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto1.jpeg" alt="Scoby Kombucha - Jengibre 1">
+                        <img src="img/foto2.jpeg" alt="Scoby Kombucha - Jengibre 2">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">jengibre</span>
+                    </div>
+                </div>
+
+                <!-- Grupo 2: foto3 + foto4 → SKOBY / café -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto3.jpeg" alt="Scoby Kombucha - Café 1">
+                        <img src="img/foto4.jpeg" alt="Scoby Kombucha - Café 2">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">café</span>
+                    </div>
+                </div>
+
+                <!-- Grupo 3: foto5 + foto6 → SKOBY / maracuyá -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto5.jpeg" alt="Scoby Kombucha - Maracuyá 1">
+                        <img src="img/foto6.jpeg" alt="Scoby Kombucha - Maracuyá 2">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">maracuyá</span>
+                    </div>
+                </div>
+
+                <!-- Grupo 4: foto7 + foto8 → SKOBY / original -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto7.jpeg" alt="Scoby Kombucha - Original 1">
+                        <img src="img/foto8.jpeg" alt="Scoby Kombucha - Original 2">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">original</span>
+                    </div>
+                </div>
+
+                <!-- Grupo 5: foto9 sola → SKOBY / pomelo -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto9.jpeg" alt="Scoby Kombucha - Pomelo">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">pomelo</span>
+                    </div>
+                </div>
+
+                <!-- Grupo 6: foto10 sola → SKOBY / catalogo -->
+                <div class="ruleta-group">
+                    <div class="ruleta-group-images">
+                        <img src="img/foto10.jpeg" alt="Scoby Kombucha - Catálogo">
+                    </div>
+                    <div class="ruleta-group-caption">
+                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-sabor">catalogo</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
         <p>📌 Pide la tuya por WhatsApp <strong>+569 3951 5170</strong> o SomosLokal</p>
     </footer>
 
+    <!-- JS DE LA RULETA -->
+    <script src="script.js"></script>
 </body>
 </html>
