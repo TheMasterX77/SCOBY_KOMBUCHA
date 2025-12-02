@@ -1,0 +1,105 @@
+/* ------------------ GENERAL ------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* Espacio debajo del banner fijo */
+.space {
+    height: 110px;
+}
+
+
+/* ------------------ BANNER FIJO ------------------ */
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 100;
+}
+
+/* Texto centrado */
+.banner .frase {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* LOGO MUCHO MÁS CHICO */
+.logo-banner {
+    width: 85px;   /* ← AQUÍ achiqué el logo bastante */
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+
+/* ------------------ IMAGEN PRINCIPAL ------------------ */
+
+.hero-img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ------------------ ICONOS FLOTANTES ------------------ */
+
+.iconos-flotantes {
+    position: fixed;
+    right: 20px;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 200;
+}
+
+.iconos-flotantes img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    transition: 0.2s;
+    background: white;
+}
+
+.iconos-flotantes img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ------------------ LOGO BLANCO INFERIOR ------------------ */
+
+.logo-white {
+    width: 180px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+    margin-top: 20px;
+    padding: 12px 15px;
+    background: white;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
