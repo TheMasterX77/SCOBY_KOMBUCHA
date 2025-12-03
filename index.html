@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome para íconos de WhatsApp e Instagram -->
+    <!-- Font Awesome para íconos -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -54,84 +54,162 @@
     </div>
 
     <!-- SECCIÓN GALERÍA / RULETA -->
-    <section class="galeria">
+    <section class="galeria reveal">
         <h2>Momentos Scoby Kombucha</h2>
         <p class="galeria-subtitulo">Botellas, sabores y la experiencia de servir tu kombucha.</p>
 
         <div class="ruleta">
             <div class="ruleta-track" id="ruleta-track">
 
-                <!-- Grupo 1: foto1 + foto2 → SKOBY / jengibre -->
+                <!-- Grupo 1: foto1 + foto2 → SCOBY / jengibre -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto1.jpeg" alt="Scoby Kombucha - Jengibre 1">
                         <img src="img/foto2.jpeg" alt="Scoby Kombucha - Jengibre 2">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">jengibre</span>
                     </div>
                 </div>
 
-                <!-- Grupo 2: foto3 + foto4 → SKOBY / café -->
+                <!-- Grupo 2: foto3 + foto4 → SCOBY / café -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto3.jpeg" alt="Scoby Kombucha - Café 1">
                         <img src="img/foto4.jpeg" alt="Scoby Kombucha - Café 2">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">café</span>
                     </div>
                 </div>
 
-                <!-- Grupo 3: foto5 + foto6 → SKOBY / maracuyá -->
+                <!-- Grupo 3: foto5 + foto6 → SCOBY / maracuyá -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto5.jpeg" alt="Scoby Kombucha - Maracuyá 1">
                         <img src="img/foto6.jpeg" alt="Scoby Kombucha - Maracuyá 2">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">maracuyá</span>
                     </div>
                 </div>
 
-                <!-- Grupo 4: foto7 + foto8 → SKOBY / original -->
+                <!-- Grupo 4: foto7 + foto8 → SCOBY / original -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto7.jpeg" alt="Scoby Kombucha - Original 1">
                         <img src="img/foto8.jpeg" alt="Scoby Kombucha - Original 2">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">original</span>
                     </div>
                 </div>
 
-                <!-- Grupo 5: foto9 sola → SKOBY / pomelo -->
+                <!-- Grupo 5: foto9 sola → SCOBY / pomelo -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto9.jpeg" alt="Scoby Kombucha - Pomelo">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">pomelo</span>
                     </div>
                 </div>
 
-                <!-- Grupo 6: foto10 sola → SKOBY / catalogo -->
+                <!-- Grupo 6: foto10 sola → SCOBY / catalogo -->
                 <div class="ruleta-group">
                     <div class="ruleta-group-images">
                         <img src="img/foto10.jpeg" alt="Scoby Kombucha - Catálogo">
                     </div>
                     <div class="ruleta-group-caption">
-                        <span class="caption-marca">SKOBY</span>
+                        <span class="caption-marca">SCOBY</span>
                         <span class="caption-sabor">catalogo</span>
                     </div>
                 </div>
 
             </div>
+
+            <!-- CONTROLES DE LA RULETA -->
+            <div class="ruleta-controls">
+                <button class="ruleta-btn ruleta-prev" aria-label="Anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="ruleta-btn ruleta-toggle" aria-label="Pausar animación">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button class="ruleta-btn ruleta-next" aria-label="Siguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CATÁLOGO -->
+    <section class="catalogo reveal">
+        <h2 class="catalogo-titulo">Nuestros Sabores</h2>
+        <p class="catalogo-subtitulo">Descubre la auténtica kombucha artesanal</p>
+        
+        <div class="catalogo-grid">
+            
+            <!-- Jengibre -->
+            <div class="catalogo-card">
+                <div class="card-imagen">
+                    <img src="img/foto1.jpeg" alt="Kombucha Jengibre">
+                </div>
+                <div class="card-contenido">
+                    <h3 class="card-sabor">jengibre</h3>
+                    <p class="card-descripcion">Refrescante y con un toque picante, perfecta para activar tu día</p>
+                </div>
+            </div>
+
+            <!-- Café -->
+            <div class="catalogo-card">
+                <div class="card-imagen">
+                    <img src="img/foto3.jpeg" alt="Kombucha Café">
+                </div>
+                <div class="card-contenido">
+                    <h3 class="card-sabor">café</h3>
+                    <p class="card-descripcion">La fusión perfecta entre kombucha y café para energía natural</p>
+                </div>
+            </div>
+
+            <!-- Maracuyá -->
+            <div class="catalogo-card">
+                <div class="card-imagen">
+                    <img src="img/foto5.jpeg" alt="Kombucha Maracuyá">
+                </div>
+                <div class="card-contenido">
+                    <h3 class="card-sabor">maracuyá</h3>
+                    <p class="card-descripcion">Tropical y vibrante, una explosión de sabor exótico</p>
+                </div>
+            </div>
+
+            <!-- Original -->
+            <div class="catalogo-card">
+                <div class="card-imagen">
+                    <img src="img/foto7.jpeg" alt="Kombucha Original">
+                </div>
+                <div class="card-contenido">
+                    <h3 class="card-sabor">original</h3>
+                    <p class="card-descripcion">El clásico sabor auténtico de la kombucha tradicional</p>
+                </div>
+            </div>
+
+            <!-- Pomelo -->
+            <div class="catalogo-card">
+                <div class="card-imagen">
+                    <img src="img/foto9.jpeg" alt="Kombucha Pomelo">
+                </div>
+                <div class="card-contenido">
+                    <h3 class="card-sabor">pomelo</h3>
+                    <p class="card-descripcion">Cítrica y refrescante, ideal para cualquier momento del día</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -205,7 +283,10 @@
         <p>📌 Pide la tuya por WhatsApp <strong>+569 3951 5170</strong> o SomosLokal</p>
     </footer>
 
-    <!-- JS DE LA RULETA -->
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button id="btn-top" class="btn-top" aria-label="Volver arriba">↑</button>
+
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
